@@ -28,7 +28,7 @@
 			      <li class="dropdown">
 			        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Captura <span class="caret"></span></a>
 			        <ul class="dropdown-menu">
-			          <li><a href="#">Agregar datos csv</a></li>
+			          <li><a href="carga">Agregar datos csv</a></li>
 			          <li><a href="#">Consultar datos</a></li>
 			          <li><a href="#">Modificar datos</a></li>
 			        </ul>
