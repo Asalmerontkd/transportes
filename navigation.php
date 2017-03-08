@@ -18,20 +18,59 @@
 	  <div id="navbar" class="navbar-collapse collapse">
 	    <ul class="nav navbar-nav">
 	      <li><a href="inicio">Inicio</a></li>
-	      <li><a href="#">About</a></li>
-	      <li><a href="#">Contact</a></li>
-	      <li class="dropdown">
-	        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
-	        <ul class="dropdown-menu">
-	          <li><a href="#">Action</a></li>
-	          <li><a href="#">Another action</a></li>
-	          <li><a href="#">Something else here</a></li>
-	          <li role="separator" class="divider"></li>
-	          <li class="dropdown-header">Nav header</li>
-	          <li><a href="#">Separated link</a></li>
-	          <li><a href="#">One more separated link</a></li>
-	        </ul>
-	      </li>
+	      <?php
+	      	if (isset($_SESSION["rol"])) {
+	      		if ($_SESSION["rol"]==1) //Administrador
+	      		{
+	      ?>
+			      <li><a href="#">Usuarios</a></li>
+			      <li><a href="#">Issue</a></li>
+			      <li class="dropdown">
+			        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Captura <span class="caret"></span></a>
+			        <ul class="dropdown-menu">
+			          <li><a href="#">Agregar datos csv</a></li>
+			          <li><a href="#">Consultar datos</a></li>
+			          <li><a href="#">Modificar datos</a></li>
+			        </ul>
+			      </li>
+			      <li class="dropdown">
+			        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Reportes <span class="caret"></span></a>
+			        <ul class="dropdown-menu">
+			          <li><a href="#">Generar reposrte</a></li>
+			          <li role="separator" class="divider"></li>
+			          <li class="dropdown-header">Estadísticas</li>
+			          <li><a href="#">Generar estadística</a></li>
+			        </ul>
+			      </li>
+	      <?php
+	      		}
+	      		else if ($_SESSION["rol"]==2) //Capturista
+	      		{
+	      	?>
+	      			<li class="dropdown">
+			        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Captura <span class="caret"></span></a>
+			        <ul class="dropdown-menu">
+			          <li><a href="#">Agregar datos csv</a></li>
+			          <li><a href="#">Consultar datos</a></li>
+			        </ul>
+			      </li>
+			      <li class="dropdown">
+			        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Reportes <span class="caret"></span></a>
+			        <ul class="dropdown-menu">
+			          <li><a href="#">Generar reposrte</a></li>
+			          <li role="separator" class="divider"></li>
+			          <li class="dropdown-header">Estadísticas</li>
+			          <li><a href="#">Generar estadística</a></li>
+			        </ul>
+			      </li>
+	      	<?php
+	      		}
+	      		else if ($_SESSION["rol"]==3) //Controlador
+	      		{
+	      			# code...
+	      		}
+	      	}
+	      ?>
 	    </ul>
 	    <ul class="nav navbar-nav navbar-right">
 	      <?php
