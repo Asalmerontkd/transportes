@@ -10,3 +10,4 @@ RewriteRule ^cerrar/?$ clase/sesiones.php?flag=2
 
 RewriteRule ^carga/?$ carga.php
 RewriteRule ^initCarga/?$ clase/subirDatos.php
+RewriteRule ^datosTemporales/?$ temporal.php
