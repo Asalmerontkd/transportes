@@ -29,6 +29,7 @@
 			        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Captura <span class="caret"></span></a>
 			        <ul class="dropdown-menu">
 			          <li><a href="carga">Agregar datos csv</a></li>
+			          <li><a href="datosTemporales">Datos para aprobación</a></li>
 			          <li><a href="#">Consultar datos</a></li>
 			          <li><a href="#">Modificar datos</a></li>
 			        </ul>
@@ -36,7 +37,7 @@
 			      <li class="dropdown">
 			        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Reportes <span class="caret"></span></a>
 			        <ul class="dropdown-menu">
-			          <li><a href="#">Generar reposrte</a></li>
+			          <li><a href="#">Generar reporte</a></li>
 			          <li role="separator" class="divider"></li>
 			          <li class="dropdown-header">Estadísticas</li>
 			          <li><a href="#">Generar estadística</a></li>
@@ -50,14 +51,15 @@
 	      			<li class="dropdown">
 			        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Captura <span class="caret"></span></a>
 			        <ul class="dropdown-menu">
-			          <li><a href="#">Agregar datos csv</a></li>
+			          <li><a href="carga">Agregar datos csv</a></li>
+			          <li><a href="datosTemporales">Datos para aprobación</a></li>
 			          <li><a href="#">Consultar datos</a></li>
 			        </ul>
 			      </li>
 			      <li class="dropdown">
 			        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Reportes <span class="caret"></span></a>
 			        <ul class="dropdown-menu">
-			          <li><a href="#">Generar reposrte</a></li>
+			          <li><a href="#">Generar reporte</a></li>
 			          <li role="separator" class="divider"></li>
 			          <li class="dropdown-header">Estadísticas</li>
 			          <li><a href="#">Generar estadística</a></li>

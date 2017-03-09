@@ -17,10 +17,14 @@
 			return ($result);
 		}
 
-		public function consultarTemporal($user)
+		public function consultarMiTemporal($userId)
 		{
 			$con = Database::getInstance();
-			$sql = "";
+			$sql = "SELECT region, idCentro, centro, tarjeta, idVehiculo, descVehiculo, noComprobante, fecha, codPemex, razonSocial, cerCualli, estado, kmAntes, kmTransaccion, capacidad, mercancia, cantMercancia, precioUni, idTerminal, placa FROM temporal WHERE user = :userId ORDER BY fechaTemp ASC";
+			$result = $con->db->prepare($sql);
+			$params = array("userId" => $userId);
+			$result->execute($params);
+			return ($result);
 		}
 	}
 ?>
