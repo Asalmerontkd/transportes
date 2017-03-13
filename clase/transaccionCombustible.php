@@ -116,6 +116,7 @@
 			{
 				//No hay registros
 			}
+			print '<script type="text/javascript">window.top.location.href = "datos";</script>';
 		}
 		elseif ($flag == 2) //eliminar temporales
 		{
