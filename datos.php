@@ -149,7 +149,7 @@
 
 		<div class="container">
 			<div class="panel panel-primary">
-				<div class="panel-heading">Centros</div>
+				<div class="panel-heading">Transacciones</div>
 				<div class="panel-body">
 					<div class="row">
 					  <div class="col-lg-6">
@@ -157,18 +157,18 @@
 					    	<div class="table-responsive">
 						    	<table class="table .table-sm table-hover table-bordered">
 						    		<tr>
-						    			<th>noComprobante</th>
-						    			<th>fecha</th>
-						    			<th>region</th>
-						    			<th>centro</th>
-						    			<th>placa</th>
-						    			<th>kmAntes</th>
-						    			<th>kmTransaccion</th>
-						    			<th>codigo</th>
-						    			<th>mercancia</th>
-						    			<th>cantMercancia</th>
-						    			<th>precioUnitario</th>
-						    			<th>total</th>
+						    			<th>NO comprobante</th>
+						    			<th>Fecha</th>
+						    			<th>Región</th>
+						    			<th>Centro</th>
+						    			<th>Placa</th>
+						    			<th>Km antes</th>
+						    			<th>Km transacción</th>
+						    			<th>Código</th>
+						    			<th>Mercancia</th>
+						    			<th>Cantidad de mercancia</th>
+						    			<th>Precio unitario</th>
+						    			<th>Total</th>
 
 						    		</tr>
 						    		<?php
