@@ -23,7 +23,7 @@
 			?>
 		</div>
 		<div class="container">
-			<div class="panel panel-default">
+			<div class="panel panel-primary">
 				<div class="panel-heading">Es correcta la carga de archivos?</div>
 				<div class="panel-body">
 					<div class="row">
@@ -95,11 +95,40 @@
 					  </div><!-- /.col-lg-6 -->
 					</div><!-- /.row -->
 				</div>
+				<div class="panel-footer">
+					<div class="btn-group" role="group" aria-label="...">
+					  <button type="button" class="btn btn-success" onclick="post('transaccionCombustible', {flag: 1})">Aprobar cambios</button>
+					  <button type="button" class="btn btn-default" onclick="post('carga', {flag: 0})">Cargar CSV</button>
+					  <button type="button" class="btn btn-danger" onclick="post('transaccionCombustible', {flag: 2})">Descartar cambios</button>
+					</div>
+				</div>
 			</div>
 		</div>
 		
 		<!-- Latest compiled and minified JavaScript -->
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+		<script type="text/javascript">
+			function post(path, params, method) {
+			    method = method || "post";
+			    var form = document.createElement("form");
+			    form.setAttribute("method", method);
+			    form.setAttribute("action", path);
+
+			    for(var key in params) {
+			        if(params.hasOwnProperty(key)) {
+			            var hiddenField = document.createElement("input");
+			            hiddenField.setAttribute("type", "hidden");
+			            hiddenField.setAttribute("name", key);
+			            hiddenField.setAttribute("value", params[key]);
+
+			            form.appendChild(hiddenField);
+			         }
+			    }
+
+			    document.body.appendChild(form);
+			    form.submit();
+			}
+		</script>
 	</body>
 </html>

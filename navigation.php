@@ -30,7 +30,7 @@
 			        <ul class="dropdown-menu">
 			          <li><a href="carga">Agregar datos csv</a></li>
 			          <li><a href="datosTemporales">Datos para aprobación</a></li>
-			          <li><a href="#">Consultar datos</a></li>
+			          <li><a href="datos">Consultar datos</a></li>
 			          <li><a href="#">Modificar datos</a></li>
 			        </ul>
 			      </li>
@@ -53,7 +53,7 @@
 			        <ul class="dropdown-menu">
 			          <li><a href="carga">Agregar datos csv</a></li>
 			          <li><a href="datosTemporales">Datos para aprobación</a></li>
-			          <li><a href="#">Consultar datos</a></li>
+			          <li><a href="datos">Consultar datos</a></li>
 			        </ul>
 			      </li>
 			      <li class="dropdown">

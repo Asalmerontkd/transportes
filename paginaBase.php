@@ -20,6 +20,8 @@
 		<div class="container">
 			<?php
 				include "navigation.php";
+
+				echo "pass ". md5("captura");
 			?>
 		</div>
 
