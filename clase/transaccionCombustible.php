@@ -103,7 +103,7 @@
 
 					$innerResult = $data->consltaFinal($row['noComprobante']);
 					if ($innerResult->rowCount() > 0) {
-						echo "exite";
+						
 					}
 					else{
 						$data->finalTransaccion($_SESSION["id"], $row['noComprobante'], $row['idTerminal'], $row['tarjeta'], $row['fecha'], $idRegion, $idCentro, $idVehiculo, $row['kmAntes'], $row['kmTransaccion'], $row['capacidad'], $idGasera, $idMercancia, $row['cantMercancia'], $row['precioUni']);

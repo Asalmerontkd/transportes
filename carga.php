@@ -25,12 +25,30 @@
 
 		<div class="container">
 			<div class="panel panel-default">
-				<div class="panel-heading">Carga de archivos cvs</div>
+				<div class="panel-heading">Carga de archivos cvs para "combustible"</div>
 				<div class="panel-body">
 					<div class="row">
 					  <div class="col-lg-6">
 					    <div class="input-group">
 					    	<form action="initCarga" enctype="multipart/form-data" method="post">
+						      <input id="archivo" accept=".csv" name="archivo" type="file" class="form-control" placeholder="Seleccionar archivo cvs...">
+						      <span class="input-group-btn">
+						        <button class="btn btn-default" type="submit">Subir datos.</button>
+						      </span>
+						    </form>
+					    </div><!-- /input-group -->
+					  </div><!-- /.col-lg-6 -->
+					</div><!-- /.row -->
+				</div>
+			</div>
+
+			<div class="panel panel-default">
+				<div class="panel-heading">Carga de archivos cvs para "entregas"</div>
+				<div class="panel-body">
+					<div class="row">
+					  <div class="col-lg-6">
+					    <div class="input-group">
+					    	<form action="initCargaEntregas" enctype="multipart/form-data" method="post">
 						      <input id="archivo" accept=".csv" name="archivo" type="file" class="form-control" placeholder="Seleccionar archivo cvs...">
 						      <span class="input-group-btn">
 						        <button class="btn btn-default" type="submit">Subir datos.</button>

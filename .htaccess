@@ -14,3 +14,5 @@ RewriteRule ^datosTemporales/?$ temporal.php
 
 RewriteRule ^transaccionCombustible/?$ clase/transaccionCombustible.php
 RewriteRule ^datos/?$ datos.php
+
+RewriteRule ^initCargaEntregas/?$ clase/subirDatosEntregas.php
